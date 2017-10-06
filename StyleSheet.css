@@ -1,2 +1,71 @@
 ﻿body {
+    background-color: #474e5d;
+    color: #ffffff;
+}
+
+/*NavBar*/
+nav#navvy.navbar.navbar-static-top {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+#navvy a {
+    color: #ffffff;
+}
+
+    #navvy a:hover {
+        background-color: transparent; /*this makes the hover color the same as the background so you don't see it*/
+    }
+
+/*TOP HEADER*/
+.jumbotron{
+     background-color: #474e5d;
+}
+.leftSide {
+    background-image: url('images/tuscany-villas-sant-anna.jpg');
+    background-repeat: no-repeat;
+    height: 350px; 
+    color: #ffffff;
+    text-align: center;
+}
+
+.rightSide {
+    background-image: url('images/Versilia.jpg');
+    background-repeat: no-repeat;
+    height: 350px; 
+    color: #ffffff;
+    text-align: center;
+}
+
+.header1 {
+    background-color: #474e5d;
+    color: #ffffff;
+    text-align:center;
+}
+.layoutColor1Color2{
+background-color:#ffffff;
+color:#474e5d;
+text-align:left;
+min-height:375px;
+margin:10px;
+}
+
+.layoutColor1Color2 img{
+    float:right;
+    width:350px;
+    margin:10px;
+}
+
+.layoutColor2Color1{
+background-color:#474e5d;
+color:#ffffff;
+text-align:right;
+min-height:375px;
+margin:10px;
+}
+.layoutColor2Color1 img{
+    float:left;
+    width:350px;
+     margin:10px;
 }

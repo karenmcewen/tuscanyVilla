@@ -2,23 +2,23 @@
 <html>
 <head>
     <title>Tuscany Villa</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <!--Google Font PT Sans-->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
           crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
 
     <!--This is our custom stylesheet- always goes after ref to bootstrap-->
@@ -27,44 +27,109 @@
 </head>
 <body>
     <!--TOP HEADER--(gray w/white) NAVBAR----------------------------------------------------------------------------->
-    
-   
-    <!--JUMBOTRON TOP HEADER PHOTO and MAP---------------------------------------------------------------------------->
-    <div class="page-header">
-        <h1 class="container">Tuscany Villa</h1>
-        <h3>We specialize in relaxation</h3>
-            <img id="headerImg" src="images/tuscany-villas-sant-anna.jpg" alt="head villa pic" />
-        <img src="images/Versilia.jpg" />
-    </div> <!--end class page-header--> 
-   
-   
-    
+    <nav class="navbar navbar-static-top" id="navvy">
+        <div class="container">
+            <div class="navbar-header">
+                <!--all these additions to 'button' allow it to collapse into a hamburger when it shrinks-->
+
+                <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger"
+                        data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+                    <!--sr is the screen reader for blind people-->
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span> <!--need one for each menu item below for screen readers/blind-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button> <!--end of button-->
+            </div> <!--end of navbar-header-->
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <!--this is the active noncollapsed navbar-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#locations">LOCATIONS</a></li>
+                    <li><a href="#amenities">AMENITIES</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
+                    <li><a href="#contact">CONTACTS</a></li>
+                </ul>
+            </div><!--Nav-Collapse ends-->
+        </div><!--end of container-->
+    </nav>
 
 
+    <!--TOP HEADER PHOTO and MAP---------------------------------------------------------------------------->
+    <div class="jumbotron container-fluid">
 
+            <div class="col-lg-9 leftSide">
+                <h1>TUSCANY VILLA</h1>
+                <h3>We specialize in relaxation</h3>
+            </div> <!--end class leftSide-->
+
+            <div class="col-lg-3 rightSide">
+            </div><!--end class rightSide-->
+        </div><!--end class row-->
+   
+     
     <!--TEXT HEADER1  LOCATIONS-(gray w/white) ----------------------------------------------------------------------->
-    <h2>LOCATIONS</h2>
-    <h3>Some places for you to go</h3>
+    <div class="header1">
+        <h2>LOCATIONS</h2>
+        <h3>Some places for you to go</h3>
+    </div> <!--end div header1-->
 
     <!--LAYOUT1 (white w/gray)  LOCATION#1 --------------------------------------------------------------------------->
-    <h2>Location #1</h2>
-    <p></p>
-    <img src="images/italy-mountain-villa.jpg" />
-   
-    <!--LAYOUT2 (gray w/white)  LOCATION#2 --------------------------------------------------------------------------->
+    <div class="container-fluid layoutColor1Color2">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2>Location #1</h2>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+            </div>
+            <div class="col-lg-3">
+                <img src="images/italy-mountain-villa.jpg" />
+            </div>
+        </div>
+    </div>
 
-    <img src="images/modern-villa.jpg" />
+    <!--LAYOUT2 (gray w/white)  LOCATION#2 --------------------------------------------------------------------------->
+    <div class="container-fluid layoutColor2Color1">
+        <div class="row">
+            <div class="col-lg-3">
+                <img src="images/modern-villa.jpg" />
+            </div>
+            <div class="col-lg-9">
+                <h2>Location #2</h2>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                
+            </div>
+        </div>
+    </div>
    
-     <!--LAYOUT1 (white w/gray)  LOCATION#3 --------------------------------------------------------------------------->
-    <img src="images/tuscany-grape-field-nature-51947.jpg" />
+
+    <!--LAYOUT1 (white w/gray)  LOCATION#3 --------------------------------------------------------------------------->
+    <div class="container-fluid layoutColor1Color2">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2>Location #3</h2>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+            </div>
+            <div class="col-lg-3">
+                <img src="images/tuscany-grape-field-nature-51947.jpg" />
+            </div>
+        </div>
+    </div>
     
-    
+
+
     <!--TEXT HEADER1  AMENITIES---(gray w/white) --------------------------------------------------------------------->
     <h2>AMENITIES</h2>
     <h3>Some stuff for you to enjoy</h3>
     <!--PHOTO TEXT TIC TAC TOE(white w/gray) & transparent buttons --------------------------------------------------->
-    
- 
     <!--ROW1 LEFT-->
     <img src="images/tuscany-villas-sant-anna.jpg" />
     <p>Rectangle Image Overlay - RECEPTIONS</p>
@@ -77,9 +142,9 @@
     <!--ROW1 RIGHT-->
     <img src="images/42-348x348.jpg" />
     <p>Rectangle Image Overlay - RELAX BY THE POOL</p>
-    
 
-     <!--ROW2 LEFT-->
+
+    <!--ROW2 LEFT-->
     <h2>WHAT SETS US APART</h2>
     <p>text here</p>
     <p>gray button - CHECK IT OUT!</p>
@@ -112,7 +177,6 @@
     <h3>What our customers say</h3>
 
     <!--CAROUSEL w/ 3 reviews(white w/gray) -------------------------------------------------------------------------->
-    
     <!--TEXT HEADER1  CONTACT--(gray w/white) ------------------------------------------------------------------------>
     <h2>CONTACT</h2>
     <h3>We've got the answers</h3>
@@ -126,7 +190,7 @@
     <p>input box -Name</p>
     <p>input box -Email</p>
     <p>input box -Comments</p>
-    
+
     <!--FOOTER with go to top button-(gray w/white) ------------------------------------------------------------------>
     <h2>^</h2>
     <h3>Copied and coded by Karen McEwen</h3>
