@@ -26,109 +26,132 @@
 
 </head>
 <body>
-    <!--TOP HEADER--(gray w/white) NAVBAR----------------------------------------------------------------------------->
-    <nav class="navbar navbar-static-top" id="navvy">
-        <div class="container">
-            <div class="navbar-header">
-                <!--all these additions to 'button' allow it to collapse into a hamburger when it shrinks-->
+    <!--TOP HEADER--(gray w/white) Logo and  NAVBAR----------------------------------------------------------------------------->
 
-                <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger"
-                        data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div class="container">
+        <div class="row">
+            <!--first column-->
+            <div class="col-lg-3">
+                <h3>LOGO</h3>
+            </div> <!--end of first column-->
+            <!--second column-->
+            <div class="col-lg-9">
+                <nav class="navbar navbar-static-top" id="navvy">
+                    <div class="navbar-header">
+                        <!--all these additions to 'button' allow it to collapse into a hamburger when it shrinks-->
 
-                    <!--sr is the screen reader for blind people-->
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span> <!--need one for each menu item below for screen readers/blind-->
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                        <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger"
+                                data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 
-                </button> <!--end of button-->
-            </div> <!--end of navbar-header-->
+                            <!--sr is the screen reader for blind people-->
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span> <!--need one for each menu item below for screen readers/blind-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
 
-            <div id="navbar" class="navbar-collapse collapse">
-                <!--this is the active noncollapsed navbar-->
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#locations">LOCATIONS</a></li>
-                    <li><a href="#amenities">AMENITIES</a></li>
-                    <li><a href="#reviews">REVIEWS</a></li>
-                    <li><a href="#contact">CONTACTS</a></li>
-                </ul>
-            </div><!--Nav-Collapse ends-->
-        </div><!--end of container-->
-    </nav>
+                        </button> <!--end of button-->
+                    </div> <!--end of navbar-header-->
 
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <!--this is the active noncollapsed navbar-->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#locations">LOCATIONS</a></li>
+                            <li><a href="#amenities">AMENITIES</a></li>
+                            <li><a href="#reviews">REVIEWS</a></li>
+                            <li><a href="#contact">CONTACTS</a></li>
+                        </ul>
+                    </div><!--Nav-Collapse ends-->
+                </nav><!--end of navigational bar-->
+            </div> <!--end of second column-->
+        </div><!--end of row-->
+    </div><!--end of container-->
 
-    <!--TOP HEADER PHOTO and MAP---------------------------------------------------------------------------->
+    <!--JUMBOTRON BACKGROUND PHOTOS ---------------------------------------------------------------------------->
     <div class="jumbotron container-fluid">
-
+        <div class="row">
             <div class="col-lg-9 leftSide">
                 <h1>TUSCANY VILLA</h1>
                 <h3>We specialize in relaxation</h3>
-            </div> <!--end class leftSide-->
+            </div> <!--end column 1 leftSide-->
 
             <div class="col-lg-3 rightSide">
-            </div><!--end class rightSide-->
-        </div><!--end class row-->
-   
-     
+            </div><!--end column 2 rightSide-->
+        </div><!--end row-->
+    </div><!--end jumbotron container-->
+
     <!--TEXT HEADER1  LOCATIONS-(gray w/white) ----------------------------------------------------------------------->
-    <div class="header1">
-        <h2>LOCATIONS</h2>
-        <h3>Some places for you to go</h3>
-    </div> <!--end div header1-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header1">
+                <h2>LOCATIONS</h2>
+                <h3>Some places for you to go</h3>
+            </div> <!--end div header1-->
+        </div><!--end row-->
+    </div><!--end container-->
 
     <!--LAYOUT1 (white w/gray)  LOCATION#1 --------------------------------------------------------------------------->
     <div class="container-fluid layoutColor1Color2">
         <div class="row">
+            <!--column 1-->
             <div class="col-lg-9">
                 <h2>Location #1</h2>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
-            </div>
+            </div> <!--end column 1-->
+            <!--column 2-->
             <div class="col-lg-3">
                 <img src="images/italy-mountain-villa.jpg" />
-            </div>
-        </div>
-    </div>
-
+            </div><!--end column 2-->
+        </div><!--end row-->
+    </div><!--end container-->
     <!--LAYOUT2 (gray w/white)  LOCATION#2 --------------------------------------------------------------------------->
     <div class="container-fluid layoutColor2Color1">
         <div class="row">
+            <!--column 1-->
             <div class="col-lg-3">
                 <img src="images/modern-villa.jpg" />
-            </div>
+            </div><!--end column 1-->
+            <!--column 2-->
             <div class="col-lg-9">
                 <h2>Location #2</h2>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
-                
-            </div>
-        </div>
-    </div>
-   
 
+            </div><!--end column 2-->
+        </div><!--end row-->
+    </div><!--end container-->
     <!--LAYOUT1 (white w/gray)  LOCATION#3 --------------------------------------------------------------------------->
     <div class="container-fluid layoutColor1Color2">
         <div class="row">
-            <div class="col-lg-9">
+            <!--column 1-->
+        <div class="col-lg-9">
                 <h2>Location #3</h2>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
-            </div>
+            </div><!--end column 1-->
+            <!--column 2-->
             <div class="col-lg-3">
                 <img src="images/tuscany-grape-field-nature-51947.jpg" />
-            </div>
-        </div>
-    </div>
-    
+            </div><!--end column 2-->
+        </div><!--end row-->
+    </div><!--end container-->
 
 
     <!--TEXT HEADER1  AMENITIES---(gray w/white) --------------------------------------------------------------------->
-    <h2>AMENITIES</h2>
-    <h3>Some stuff for you to enjoy</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header1">
+                <h2>AMENITIES</h2>
+                <h3>Some stuff for you to enjoy</h3>
+            </div> <!--end div header1-->
+        </div><!--end row-->
+    </div><!--end container-->
+    
+     
     <!--PHOTO TEXT TIC TAC TOE(white w/gray) & transparent buttons --------------------------------------------------->
     <!--ROW1 LEFT-->
     <img src="images/tuscany-villas-sant-anna.jpg" />
