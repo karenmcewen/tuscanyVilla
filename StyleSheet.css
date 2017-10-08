@@ -3,7 +3,7 @@
     color: #ffffff;
 }
 
-/*NavBar*/
+/*NavBar --------------------------------------------------------------------------------------------*/
 nav#navvy.navbar.navbar-static-top {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -18,14 +18,16 @@ nav#navvy.navbar.navbar-static-top {
         background-color: transparent; /*this makes the hover color the same as the background so you don't see it*/
     }
 
-/*TOP HEADER*/
-.jumbotron{
-     background-color: #474e5d;
+/*TOP HEADER/JUMBOTRON ------------------------------------------------------------------------------*/
+.jumbotron {
+    background-color: #474e5d;
 }
+
 .leftSide {
     background-image: url('images/tuscany-villas-sant-anna.jpg');
     background-repeat: no-repeat;
-    height: 350px; 
+    background-size: cover;
+    height: 350px;
     color: #ffffff;
     text-align: center;
 }
@@ -33,39 +35,197 @@ nav#navvy.navbar.navbar-static-top {
 .rightSide {
     background-image: url('images/Versilia.jpg');
     background-repeat: no-repeat;
-    height: 350px; 
+    background-size: cover;
+    height: 350px;
     color: #ffffff;
     text-align: center;
 }
-
+/*HEADERS between sections -----------------------------------------------------------------*/
 .header1 {
     background-color: #474e5d;
     color: #ffffff;
+    text-align: center;
+}
+/*PROPERTIES section with alternating colors &sides----------------------------------------*/
+.layoutColor1Color2 {
+    background-color: #ffffff;
+    color: #474e5d;
+    text-align: left;
+    min-height: 350px;
+    margin: 10px;
+}
+
+    .layoutColor1Color2 .img {
+        float: right;
+        width: 350px;
+        margin: 10px;
+    }
+
+    .layoutColor1Color2 .btn {
+        border: none; /* Remove borders */
+        background-color: #474e5d; /*button color*/
+        color: #ffffff; /* Add a text color */
+        padding: 14px 28px; /* Add some padding */
+        cursor: pointer; /* Add a pointer cursor on mouse-over */
+    }
+
+        .layoutColor1Color2 .btn:hover {
+            background-color: lightgray; /*button color changes for hover*/
+        }
+
+.layoutColor2Color1 {
+    background-color: #474e5d;
+    color: #ffffff;
+    text-align: left;
+    min-height: 350px;
+    margin: 10px;
+}
+
+    .layoutColor2Color1 .img {
+        float: left;
+        width: 350px;
+        margin: 10px;
+    }
+
+    .layoutColor2Color1 .btn {
+        border: none; /* Remove borders */
+        background-color: #ffffff; /*button color*/
+        color: #474e5d; /* Add a text color */
+        padding: 14px 28px; /* Add some padding */
+        cursor: pointer; /* Add a pointer cursor on mouse-over */
+    }
+
+        .layoutColor2Color1 .btn:hover {
+            background-color: lightgray; /*button color changes for hover*/
+        }
+
+/*TIC TAC TOE LAYOUT-------------------------------------------------------------------------------------------*/
+.TTT {
+    background-color: #ffffff;
+    color: #474e5d;
+    text-align: center;
+}
+
+ .TTT .btn {
+        border: none; /* Remove borders */
+        background-color: #474e5d; /*button color*/
+        color: #ffffff; /* Add a text color */
+        padding: 14px 28px; /* Add some padding */
+        cursor: pointer; /* Add a pointer cursor on mouse-over */
+    }
+
+        .layoutColor1Color2 .btn:hover {
+            background-color: lightgray; /*button color changes for hover*/
+        }
+    .TTT .row {
+        min-height: 350px;
+    }
+   
+    TTT .transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+  TTT .transbox p  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    .TTT .topLeft {
+        background-image: url('images/tuscany-villas-sant-anna.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #cccccc;
+        height: 350px;
+        color: #ffffff;
+    }
+
+    .TTT .topMiddle {
+    }
+
+    .TTT .topRight {
+        background-image: url('images/42-348x348.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        color: #ffffff;
+    }
+
+    .TTT .middleLeft {
+    }
+
+    .TTT .middleMiddle {
+        background-image: url('images/314-348x348.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        color: #ffffff;
+    }
+
+    .TTT .middleRight {
+    }
+
+    .TTT .bottomLeft {
+        background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        color: #ffffff;
+    }
+
+    .TTT .bottomMiddle {
+    }
+
+    .TTT .bottomRight {
+        background-image: url('images/Villa-Vanna-231-348x348.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        color: #ffffff;
+    }
+
+/* REVIEWS CAROUSEL --------------------------------------------------------------------------------------------*/
+.reviews {
+    background-color: #ffffff;
+    color: #474e5d;
+    text-align: center;
+}
+#myCarousel{
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color:#ffffff;   
+    height:350px;
+}
+#myCarousel .img{
+        float: right;
+        height: 350px;
+        margin: 10px;
+}
+.carousel-indicators{
+   background-color:transparent;
+   color:#474e5d;
+   border:thick;
+}
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+.carousel-caption{
     text-align:center;
-}
-.layoutColor1Color2{
-background-color:#ffffff;
-color:#474e5d;
-text-align:left;
-min-height:375px;
-margin:10px;
+    color: #474e5d;
+    padding-bottom:50px;
 }
 
-.layoutColor1Color2 img{
-    float:right;
-    width:350px;
-    margin:10px;
+/*INFORMATION and FORM -----------------------------------------------------------------------------------------*/
+.information {
+    background-color: #ffffff;
+    color: #474e5d;
 }
 
-.layoutColor2Color1{
-background-color:#474e5d;
-color:#ffffff;
-text-align:right;
-min-height:375px;
-margin:10px;
-}
-.layoutColor2Color1 img{
-    float:left;
-    width:350px;
-     margin:10px;
-}
+

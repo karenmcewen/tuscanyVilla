@@ -3,39 +3,45 @@
 <head>
     <title>Tuscany Villa</title>
     <meta charset="utf-8" />
+    <!--CSS tutorial suggests to add meta viewport to ensure responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Google Font PT Sans-->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-          crossorigin="anonymous">
+          crossorigin="anonymous">-->
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--This is our custom stylesheet- always goes after ref to bootstrap-->
     <link href="StyleSheet.css" rel="stylesheet" />
 
 </head>
 <body>
-    <!--TOP HEADER--(gray w/white) Logo and  NAVBAR----------------------------------------------------------------------------->
+    <!--TOP HEADER--(gray w/white) Logo and  NAVBAR----------------------------------------------------------------->
 
     <div class="container">
         <div class="row">
             <!--first column-->
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <h3>LOGO</h3>
             </div> <!--end of first column-->
             <!--second column-->
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <nav class="navbar navbar-static-top" id="navvy">
                     <div class="navbar-header">
                         <!--all these additions to 'button' allow it to collapse into a hamburger when it shrinks-->
@@ -67,23 +73,24 @@
         </div><!--end of row-->
     </div><!--end of container-->
 
-    <!--JUMBOTRON BACKGROUND PHOTOS ---------------------------------------------------------------------------->
-    <div class="jumbotron container-fluid">
-        <div class="row">
-            <div class="col-lg-9 leftSide">
-                <h1>TUSCANY VILLA</h1>
-                <h3>We specialize in relaxation</h3>
-            </div> <!--end column 1 leftSide-->
+    <!--JUMBOTRON w/BACKGROUND PHOTOS ---------------------------------------------------------------------------->
+    <div class="jumbotron"> <!--put jumbotron outside container to extend to end of screen-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 leftSide">
+                    <h1>TUSCANY VILLA</h1>
+                    <h3>We specialize in relaxation</h3>
+                </div> <!--end column 1 leftSide-->
 
-            <div class="col-lg-3 rightSide">
-            </div><!--end column 2 rightSide-->
-        </div><!--end row-->
-    </div><!--end jumbotron container-->
-
+                <div class="col-lg-4 rightSide">
+                </div><!--end column 2 rightSide-->
+            </div><!--end row-->
+        </div><!--end  container-->
+    </div><!--end jumbotron -->
     <!--TEXT HEADER1  LOCATIONS-(gray w/white) ----------------------------------------------------------------------->
     <div class="container-fluid">
         <div class="row">
-            <div class="header1">
+            <div class="col-lg-12 header1">
                 <h2>LOCATIONS</h2>
                 <h3>Some places for you to go</h3>
             </div> <!--end div header1-->
@@ -94,15 +101,16 @@
     <div class="container-fluid layoutColor1Color2">
         <div class="row">
             <!--column 1-->
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <h2>Location #1</h2>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <a href="#" class="btn btn-default" role="button">Reserve Now!</a>
             </div> <!--end column 1-->
             <!--column 2-->
-            <div class="col-lg-3">
-                <img src="images/italy-mountain-villa.jpg" />
+            <div class="col-lg-4">
+                <img class="img-responsive" src="images/italy-mountain-villa.jpg" alt="Italian mountain villa"/>
             </div><!--end column 2-->
         </div><!--end row-->
     </div><!--end container-->
@@ -110,15 +118,16 @@
     <div class="container-fluid layoutColor2Color1">
         <div class="row">
             <!--column 1-->
-            <div class="col-lg-3">
-                <img src="images/modern-villa.jpg" />
+            <div class="col-lg-4">
+                <img class="img-responsive" src="images/modern-villa.jpg" alt="Italian modern villa"/>
             </div><!--end column 1-->
             <!--column 2-->
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <h2>Location #2</h2>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+                <a href="#" class="btn btn-info" role="button">Check it Out!</a>
 
             </div><!--end column 2-->
         </div><!--end row-->
@@ -127,15 +136,16 @@
     <div class="container-fluid layoutColor1Color2">
         <div class="row">
             <!--column 1-->
-        <div class="col-lg-9">
+        <div class="col-lg-8">
                 <h2>Location #3</h2>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
                 <p>Go to this place this is an awesome place for you to go it has lots of lovely things.</p>
+            <a href="#" class="btn btn-info" role="button">Join Us!</a>
             </div><!--end column 1-->
             <!--column 2-->
-            <div class="col-lg-3">
-                <img src="images/tuscany-grape-field-nature-51947.jpg" />
+            <div class="col-lg-4">
+                <img class="img-responsive" src="images/tuscany-grape-field-nature-51947.jpg" alt="Tuscany grape field"/>
             </div><!--end column 2-->
         </div><!--end row-->
     </div><!--end container-->
@@ -144,7 +154,7 @@
     <!--TEXT HEADER1  AMENITIES---(gray w/white) --------------------------------------------------------------------->
     <div class="container-fluid">
         <div class="row">
-            <div class="header1">
+            <div class="col-lg-12 header1">
                 <h2>AMENITIES</h2>
                 <h3>Some stuff for you to enjoy</h3>
             </div> <!--end div header1-->
@@ -152,72 +162,224 @@
     </div><!--end container-->
     
      
-    <!--PHOTO TEXT TIC TAC TOE(white w/gray) & transparent buttons --------------------------------------------------->
-    <!--ROW1 LEFT-->
-    <img src="images/tuscany-villas-sant-anna.jpg" />
-    <p>Rectangle Image Overlay - RECEPTIONS</p>
+    <!--PHOTO TEXT TIC TAC TOE(white w/gray) --------------------------------------------------->
+    
+    <div class="container-fluid TTT">
+        <div class="row">
+            <!--ROW TOP LEFT-->
+            <div class="col-lg-4 topLeft">
+                <div class="transbox">
+                    <p>RECEPTIONS</p>
+                </div>
+            </div> <!--end column left-->
+            
+        <!--ROW TOP MIDDLE-->
+            <div class="col-lg-4 topMiddle">
+                <h2>A VILLA FOR EVERY OCCASION</h2>
+                <p>Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem sequi nesciunt, 
+                neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem 
+                sequi nesciunt, neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error 
+                qui ratione voluptatem sequi nesciunt, neque porro quisquam est </p>
+                
+                <a href="#" class="btn btn-default" role="button">CHECK IT OUT!</a>
+            </div> <!--end column middle-->
 
-    <!--ROW1 MIDDLE-->
-    <h2>A VILLA FOR EVERY OCCASION</h2>
-    <p>text here</p>
-    <p>gray button - CHECK IT OUT!</p>
+            <!--ROW TOP RIGHT-->
+            <div class="col-lg-4 topRight">
+                
+                <p>Rectangle Image Overlay - RELAX BY THE POOL</p>
+            </div> <!--end column right-->    
+             </div><!--end row top-->
+    
+        <div class="row">
+         <!--ROW MIDDLE LEFT-->
+        <div class="col-lg-4 middleLeft">
+            <h2>WHAT SETS US APART</h2>
+            <p>
+                Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem sequi nesciunt,
+                neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem
+                sequi nesciunt, neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error
+                qui ratione voluptatem sequi nesciunt, neque porro quisquam est
+            </p>
+            <a href="#" class="btn btn-default" role="button">CHECK IT OUT!</a>
+            </div><!--end column left-->
+          
 
-    <!--ROW1 RIGHT-->
-    <img src="images/42-348x348.jpg" />
-    <p>Rectangle Image Overlay - RELAX BY THE POOL</p>
+            <!--ROW MIDDLE MIDDLE-->
+            <div class="col-lg-4 middleMiddle">
+                
+                <p>Rectangle Image Overlay - FEELS LIKE HOME</p>
+            </div><!--end column middle-->
+           
+         <!--ROW MIDDLE RIGHT-->
+            <div class="col-lg-4 middleRight">
+                <h2>TALK TO STAFF</h2>
+                <p>
+                    Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem sequi nesciunt,
+                    neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem
+                    sequi nesciunt, neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error
+                    qui ratione voluptatem sequi nesciunt, neque porro quisquam est
+                </p>
+                <a href="#" class="btn btn-default" role="button">CHECK IT OUT!</a>
+            </div><!--end column right-->  
+        </div><!--end row middle-->
 
-
-    <!--ROW2 LEFT-->
-    <h2>WHAT SETS US APART</h2>
-    <p>text here</p>
-    <p>gray button - CHECK IT OUT!</p>
-
-    <!--ROW2 MIDDLE-->
-    <img src="images/314-348x348.jpg" />
-    <p>Rectangle Image Overlay - FEELS LIKE HOME</p>
-
-    <!--ROW2 RIGHT-->
-    <h2>TALK TO STAFF</h2>
-    <p>text here</p>
-    <p>gray button - CHECK IT OUT!</p>
-
-    <!--ROW3 LEFT-->
-    <img src="images/Villa-Rucellai-Toscani-2812-2-348x348.jpg" />
-    <p>Rectangle Image Overlay - ENJOY THE VIEWS</p>
-
-    <!--ROW3 MIDDLE-->
-    <h2>BOOK YOUR VILLA</h2>
-    <p>text here</p>
-    <p>gray button - CHECK IT OUT!</p>
-
-    <!--ROW3 RIGHT-->
-    <img src="images/Villa-Vanna-231-348x348.jpg" />
-    <p>Rectangle Image Overlay - RECEPTIONS</p>
+        <div class="row">
+            <!--ROW BOTTOM LEFT-->
+            <div class="col-lg-4 bottomLeft">
+                
+                <p>Rectangle Image Overlay - ENJOY THE VIEWS</p>
+            </div><!--end column left--> 
+            
+        <!--ROW BOTTOM MIDDLE-->
+            <div class="col-lg-4 bottomMiddle">
+                <h2>BOOK YOUR VILLA</h2>
+                <p>
+                    Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem sequi nesciunt,
+                    neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error qui ratione voluptatem
+                    sequi nesciunt, neque porro quisquam est, Sed ut perspiciatis, unde omnis iste natus error
+                    qui ratione voluptatem sequi nesciunt, neque porro quisquam est
+                </p>
+                <a href="#" class="btn btn-default" role="button">CHECK IT OUT!</a>
+            </div><!--end column middle-->
+                <!--ROW BOTTOM RIGHT-->
+            <div class="col-lg-4 bottomRight">
+               
+                <p>Rectangle Image Overlay - RECEPTIONS</p>
+            </div><!--end column right-->  
+            </div><!--end row bottom-->
+    </div><!--end TIC TAC TOE container-->
 
 
     <!--TEXT HEADER1  REVIEWS--(gray w/white) ------------------------------------------------------------------------>
-    <h2>REVIEWS</h2>
-    <h3>What our customers say</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 header1">
+                <h2>REVIEWS</h2>
+                <h3>What our customers say</h3>
+            </div> <!--end div header1-->
+        </div><!--end row-->
+    </div><!--end container-->
+    
 
     <!--CAROUSEL w/ 3 reviews(white w/gray) -------------------------------------------------------------------------->
-    <!--TEXT HEADER1  CONTACT--(gray w/white) ------------------------------------------------------------------------>
-    <h2>CONTACT</h2>
-    <h3>We've got the answers</h3>
+    <!--<div class="container-fluid">
+        <div class="row reviews">
+            <div class="col-lg-12">
+                <h2>CAROUSEL HERE</h2>
+            </div> <!--end div-->
+        <!--</div>--><!--end row-->
+    <!--</div>--><!--end container-->-->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/42-348x348.jpg" />
+                <div class="carousel-caption">
+                    <h3>Sitting by the pool in Italy is so much fun!</h3>
+                    <p>Tina, Tuscany lover</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/Villa-Rucellai-Toscani-2812-2-348x348.jpg" />
+               
+                <div class="carousel-caption">
+                    <h3>I love it! I love it! I love it!</h3>
+                    <p>Stella, Avid Napper</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/Villa-Vanna-231-348x348.jpg" />
+                <div class="carousel-caption">
+                    <h3>Ciao!</h3>
+                    <p>Bubba, Don't quote me.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    
+     <!--TEXT HEADER1  CONTACT--(gray w/white) ------------------------------------------------------------------------>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 header1">
+            <h2>CONTACT</h2>
+            <h3>We've got the answers</h3>
+            </div> <!--end div header1-->
+        </div><!--end row-->
+    </div><!--end container-->
 
     <!--FORM  INFORMATION INPUT w/contact info, icons, and input form (white w/gray) --------------------------------->
-    <p>Contact us and we'll get back to you within 24 hours.</p>
-    <p>map glyph - Cleveland, Ohio</p>
-    <p>phone glyph - 555-555-1212</p>
-    <p>email glyph - name@email.com</p>
+    <div class="container-fluid information">
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Cleveland, Ohio</p>
+                <p><span class="glyphicon glyphicon-phone"></span> 555-555-1212</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> name@email.com</p>
+            </div> <!--end column left-->
 
-    <p>input box -Name</p>
-    <p>input box -Email</p>
-    <p>input box -Comments</p>
+            <div class="col-lg-6">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </form>
+                <form>
+                    <div class="form-group">
+                        <label for="comment">Comment</label>
+                        <textarea class="form-control" rows="10" id="comment">
+                            </textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+               
+            </div> <!--end column right-->
+        </div><!--end row-->
+    </div><!--end container-->
+    
+    
+   
+
+ 
 
     <!--FOOTER with go to top button-(gray w/white) ------------------------------------------------------------------>
-    <h2>^</h2>
-    <h3>Copied and coded by Karen McEwen</h3>
-    <h3>Not at all copyrighted</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 header1">
+                <h2>^</h2>
+                <h4>Copied and coded by Karen McEwen</h4>
+                <h4>Not at all copyrighted</h4>
+            </div> <!--end div header1-->
+        </div><!--end row-->
+    </div><!--end container-->
 
 </body>
 </html>
