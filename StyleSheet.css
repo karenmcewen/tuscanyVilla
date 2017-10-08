@@ -56,9 +56,18 @@ nav#navvy.navbar.navbar-static-top {
 }
 
     .layoutColor1Color2 .img {
-        float: right;
-        width: 350px;
-        margin: 10px;
+        display: block;
+         float: right;
+         margin: auto;
+    width: 50%;
+        height: 350px;
+        max-width: 100%;
+    height: auto;
+        /*margin:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        padding-right:10px;*/
     }
 
     .layoutColor1Color2 .btn {
@@ -85,6 +94,10 @@ nav#navvy.navbar.navbar-static-top {
         float: left;
         width: 350px;
         margin: 10px;
+         padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        padding-right:10px;
     }
 
     .layoutColor2Color1 .btn {
@@ -121,17 +134,22 @@ nav#navvy.navbar.navbar-static-top {
         min-height: 350px;
     }
    
-    TTT .transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+    .TTT .transbox {
+  margin-top: 125px;
+  margin-right:75px;
+  margin-left:75px;
+  background-color:rgba(192,192,192,0.6);
+  border:hidden;
+ 
 }
-  TTT .transbox p  {
-  display: flex;
+  .TTT .transbox .p .h2 .h3  {
+  display:flex;
   justify-content: center;
   align-items: center;
+  padding:10px;
+  margin:10px;
+  color:white;
+  text-decoration:solid;
 }
     .TTT .topLeft {
         background-image: url('images/tuscany-villas-sant-anna.jpg');
@@ -216,16 +234,19 @@ nav#navvy.navbar.navbar-static-top {
 .carousel-indicators .active {
   background-color: #444;
 }
-.carousel-caption{
-    text-align:center;
+.carousel-caption{   
+    background-color:transparent;
     color: #474e5d;
-    padding-bottom:50px;
+     text-align:center;
+    padding-bottom:100px;
 }
 
 /*INFORMATION and FORM -----------------------------------------------------------------------------------------*/
 .information {
     background-color: #ffffff;
     color: #474e5d;
+    text-align:left;
+    padding-top:20px;
 }
 
-
+/*FOOTER-----------------------------------------------------------------------------------------*/
