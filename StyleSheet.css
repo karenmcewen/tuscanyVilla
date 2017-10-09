@@ -139,7 +139,7 @@ nav#navvy.navbar.navbar-static-top {
         border: hidden;
     }
 
-        .TTT .transbox .p .h2 .h3 {
+        .TTT .transbox p h2 h3 {
             display: flex;
             justify-content: center;
             align-items: center;
