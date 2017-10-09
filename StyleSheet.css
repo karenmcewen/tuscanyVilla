@@ -55,16 +55,15 @@ nav#navvy.navbar.navbar-static-top {
     margin: 10px;
 }
 
-    .layoutColor1Color2 .img {
+    .layoutColor1Color2 img {
         display: block;
         float: right;
-        /*width: 50%;
         
-        margin:50px;
-        padding-top:50px;
-        padding-bottom:50px;
-        padding-left:20px;
-        padding-right:20px;*/
+        margin:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        padding-right:10px;
     }
 
     .layoutColor1Color2 .btn {
@@ -87,14 +86,14 @@ nav#navvy.navbar.navbar-static-top {
     margin: 10px;
 }
 
-    .layoutColor2Color1 .img {
+    .layoutColor2Color1 img {
+        display:block;
         float: left;
-        width: 350px;
-        margin: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+         margin:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        padding-right:10px;
     }
 
     .layoutColor2Color1 .btn {
